@@ -1,0 +1,9 @@
+.soft-skills__image-skills {
+  width: 100%;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__image-skills {
+    max-width: 570px;
+  }
+}

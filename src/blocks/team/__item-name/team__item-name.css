@@ -1,0 +1,15 @@
+.team__item-name {
+  font-weight: 400;
+  font-size: 1vw;
+  color: #fff;
+  margin-top: 2.5vw;
+  line-height: 1.5vw;
+  text-align: center;
+}
+
+@media (max-width : 1023px) {
+  .team__item-name {
+    font-size: 13px;
+    line-height: 1em;
+  }
+}

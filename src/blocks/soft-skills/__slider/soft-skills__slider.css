@@ -1,0 +1,62 @@
+.soft-skills__slider {
+  max-width: 48vw;
+}
+
+.soft-skills__slider .slider-list {
+  height: 17vw;
+}
+
+.soft-skills__slider .slider-track {
+  width: fit-content;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 2vw;
+  padding: 0 1vw;
+}
+
+.soft-skills__slider .color-left {
+  right: -.5%;
+  z-index: 1;
+  transition: .7s;
+  box-shadow: inset -9vw 0 6vw -5vw #03091b;
+}
+
+.soft-skills__slider .color-right {
+  left: -.5%;
+  z-index: 1;
+  transition: .7s;
+  box-shadow: inset 9vw 0 6vw -5vw #03091b;
+}
+
+
+.soft-skills__slider img {
+  width: 11vw;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__slider {
+    width: 85vw;
+    max-width: 400px;
+  }
+
+  .soft-skills__slider .slider-track {
+    grid-column-gap: 10px;
+    padding: 0;
+  }
+
+  .soft-skills__slider .slider-list {
+    height: 135px;
+  }
+
+  .soft-skills__slider img {
+    width: 100px;
+  }
+
+  .soft-skills__slider .color-left {
+    box-shadow: inset -20px 0px 10px -10px #03091b;
+  }
+  
+  .soft-skills__slider .color-right {
+    box-shadow: inset -20px 0px 10px -10px #03091b;
+  }
+}

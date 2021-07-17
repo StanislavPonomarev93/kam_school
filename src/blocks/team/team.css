@@ -1,0 +1,37 @@
+@import url('./__container-list/team__container-list.css');
+@import url('./__item/team__item.css');
+@import url('./__title/team__title.css');
+@import url('./__image/team__image.css');
+@import url('./__item-image/team__item-image.css');
+@import url('./__container-title/team__container-title.css');
+@import url('./__item-name/team__item-name.css');
+@import url('./__item-text/team__item-text.css');
+@import url('./__image-two/team__image-two.css');
+
+.team {
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+@media (max-width : 1023px) {
+  .team {
+    padding: 50px 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .team {
+    padding: 50px 30px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

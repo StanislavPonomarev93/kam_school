@@ -1,0 +1,7 @@
+.soft-skills__image-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2vw;
+  width: 100%;
+}

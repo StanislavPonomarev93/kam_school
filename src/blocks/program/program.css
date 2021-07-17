@@ -1,0 +1,36 @@
+@import url('./__container-one/program__container-one.css');
+@import url('./__image-one/program__image-one.css');
+@import url('./__container-two/program__container-two.css');
+@import url('./__container-three/program__container-three.css');
+@import url('./__image-two/program__image-two.css');
+@import url('./__container-four/program__container-four.css');
+@import url('./__image-three/program__image-three.css');
+@import url('./__link-image-two/program__link-image-two.css');
+
+
+.program {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media (max-width : 1023px) {
+  .program {
+    padding: 3.5vw 6vw 4vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .program {
+    padding: 50px 0 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+  }
+}

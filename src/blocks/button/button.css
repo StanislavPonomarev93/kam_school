@@ -1,0 +1,21 @@
+.button {
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(89.26deg, rgba(2, 9, 25, 0) -37.02%, rgba(21, 13, 56, 0.1598) -12.72%, rgba(69, 25, 135, 0.5104) 40.59%, #8D2AFF 115.03%);
+  border: 1px solid #fff;
+}
+
+.button[disabled] {
+  cursor: default;
+}
+
+.button[disabled]:hover {
+  opacity: 1;
+}
+
+.button:hover {
+  opacity: .6;
+}

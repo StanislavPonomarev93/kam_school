@@ -1,0 +1,22 @@
+.skills__technologies {
+  margin-top: 2vw;
+  opacity: 0;
+}
+
+.skills__technologies-input {
+  background-color: #fff;
+}
+
+.skills__technologies-input::-webkit-slider-thumb {
+  background-color: #fff;
+  border: 1px solid #020919;
+}
+
+@media (max-width : 767px) {
+  .skills__technologies {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

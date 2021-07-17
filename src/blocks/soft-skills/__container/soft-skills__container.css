@@ -1,0 +1,21 @@
+.soft-skills__container {
+  opacity: 0;
+}
+
+.soft-skills__container-input {
+  background-color: #fff;
+}
+
+.soft-skills__container-input::-webkit-slider-thumb {
+  background-color: #fff;
+  border: 1px solid #020919;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}

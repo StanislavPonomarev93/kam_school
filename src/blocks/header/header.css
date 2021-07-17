@@ -1,0 +1,47 @@
+@import url('./__text/header__text.css');
+@import url('./__nav/header__nav.css');
+@import url('./__anchor/header__anchor.css');
+@import url('./__menu/header__menu.css');
+@import url('./__container/header__container.css');
+@import url('./__logo/header__logo.css');
+@import url('./__nav-button/header__nav-button.css');
+@import url('./__decor/header__decor.css');
+@import url('./__button/header__button.css');
+@import url('./__link/header__link.css');
+@import url('./__link-text/header__link-text.css');
+@import url('./__link-image/header__link-image.css');
+
+.header {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 3.5vw;
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 6vw;
+  background-color: rgba(2, 9, 25, .9);
+  z-index: 9;
+  --sq-color: 0;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: var(--sq-color);
+  bottom: 0;
+  left: 0;
+  background-color: rgb(43, 255, 0);
+}
+
+@media (max-width : 767px) {
+  .header {
+    height: 50px;
+    padding: 0 30px;
+    border-bottom: 1px solid #556d71;
+    justify-content: space-between;
+  }
+}

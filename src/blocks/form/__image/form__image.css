@@ -1,0 +1,9 @@
+.form__image {
+  width: 25vw;
+}
+
+@media (max-width : 767px) {
+  .form__image {
+    display: none;
+  }
+}

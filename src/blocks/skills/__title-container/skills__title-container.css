@@ -1,0 +1,13 @@
+.skills__title-container {
+  margin: 1vw 6vw 0 0;
+  max-width: 35vw;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .skills__title-container {
+    margin-right: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+}

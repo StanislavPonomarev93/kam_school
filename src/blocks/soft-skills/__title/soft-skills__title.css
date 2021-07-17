@@ -1,0 +1,17 @@
+.soft-skills__title {
+  font-weight: 400;
+  font-size: 3vw;
+  color: #fff;
+  margin: 0 0 1vw;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__title {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,13 @@
+.skills-technologies__title {
+  font-weight: 400;
+  font-size: 3vw;
+  margin: 0 0 1vw 1vw;
+}
+
+@media (max-width : 767px) {
+  .skills-technologies__title {
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0;
+  }
+}

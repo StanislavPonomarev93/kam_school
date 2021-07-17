@@ -1,0 +1,14 @@
+.about-me__image-main {
+  border-radius: 2.2vw;
+  width: 30vw;
+  height: 36vw;
+  object-fit: cover;
+  object-position: 61% 0%;
+  display: block;
+}
+
+@media (max-width : 767px) {
+  .about-me__image-main {
+    width: 100%;
+  }
+}

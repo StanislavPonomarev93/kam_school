@@ -1,0 +1,31 @@
+@import url('./__title/skills__title.css');
+@import url('./__subtitle/skills__subtitle.css');
+@import url('./__languages/skills__languages.css');
+@import url('./__title-container/skills__title-container.css');
+@import url('./__technologies/skills__technologies.css');
+@import url('./__container/skills__container.css');
+
+.skills {
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 6vw 2vw;
+  box-sizing: border-box;
+  height: 50vh;
+}
+
+@media (max-width : 1023px) {
+  .skills {
+    padding: 6vw 6vw 1vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .skills {
+    padding: 50px 30px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

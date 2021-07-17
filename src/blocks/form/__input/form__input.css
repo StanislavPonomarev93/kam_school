@@ -1,0 +1,36 @@
+.form__input {
+  height: 5vw;
+  border-radius: 3vw;
+  border: none;
+  padding: 0 1.5vw;
+  box-sizing: border-box;
+  font-size: 2vw;
+  width: 30vw;
+}
+
+.form__input::placeholder {
+  font-size: 2vw;
+}
+
+.form__input:focus {
+  outline: none;
+  border: .2vw solid #587ada;
+}
+
+@media (max-width : 767px) {
+  .form__input {
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 15px;
+    width: auto;
+  }
+
+  .form__input::placeholder {
+    font-size: 15px;
+  }
+
+  .form__input:focus {
+    border: 1px solid #587ada;
+  }
+}

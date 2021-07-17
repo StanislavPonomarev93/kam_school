@@ -1,0 +1,17 @@
+.soft-skills__title-container {
+  margin: 1vw 7vw 0 0;
+  max-width: 35vw;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__title-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+}

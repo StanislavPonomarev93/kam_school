@@ -1,0 +1,19 @@
+.program__container-four {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 1vw;
+  background-color: #fff;
+  margin-top: 1vw;
+  padding: 1vw;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .program__container-four {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding: 10px;
+  }
+}

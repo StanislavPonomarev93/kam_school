@@ -1,0 +1,12 @@
+.form__form {
+  display: grid;
+  grid-row-gap: 2vw;
+}
+
+@media (max-width : 767px) {
+  .form__form {
+    grid-row-gap: 20px;
+    max-width: 270px;
+    min-width: 270px;
+  }
+}

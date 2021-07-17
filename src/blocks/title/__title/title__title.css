@@ -1,0 +1,16 @@
+.title__title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 5vw;
+  margin: 5vw 1vw 4vw 0;
+}
+
+@media (max-width : 767px) {
+  .title__title {
+    font-size: 34px;
+    line-height: 42px;
+    margin-top: 20px;
+    margin-right: 0;
+    max-width: 325px;
+  }
+}

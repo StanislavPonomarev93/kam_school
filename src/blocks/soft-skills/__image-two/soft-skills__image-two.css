@@ -1,0 +1,12 @@
+@media (min-width : 768px) {
+  .soft-skills__image-two {
+    display: none;
+  }
+}
+
+@media (max-width : 767px) {
+  .soft-skills__image-two {
+    margin-top: 20px;
+    width: 185px;
+  }
+}

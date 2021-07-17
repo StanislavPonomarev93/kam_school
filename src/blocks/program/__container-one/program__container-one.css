@@ -1,0 +1,10 @@
+.program__container-one {
+  margin-right: 4vw;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .program__container-one {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,39 @@
+@import url('./__title/soft-skills__title.css');
+@import url('./__subtitle/soft-skills__subtitle.css');
+@import url('./__container-second/soft-skills__container-second.css');
+@import url('./__title-extension/soft-skills__title-extension.css');
+@import url('./__slider/soft-skills__slider.css');
+@import url('./__image-skills/soft-skills__image-skills.css');
+@import url('./__container/soft-skills__container.css');
+@import url('./__title-container/soft-skills__title-container.css');
+@import url('./__image/soft-skills__image.css');
+@import url('./__title-skills/soft-skills__title-skills.css');
+@import url('./__image-two/soft-skills__image-two.css');
+@import url('./__skills/soft-skills__skills.css');
+@import url('./__image-container/soft-skills__image-container.css');
+
+
+.soft-skills {
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+@media (max-width : 1023px) {
+  .soft-skills {
+  padding: 3.5vw 6vw 4vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .soft-skills {
+    padding: 50px 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}

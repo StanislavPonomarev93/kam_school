@@ -1,0 +1,14 @@
+.program__image-three {
+  height: 9vw;
+}
+
+@media (max-width : 767px) {
+  .program__image-three {
+    height: 100px;
+    margin: 0 5px 10px 0;
+  }
+  .program__image-three:nth-last-child(2),
+  .program__image-three:last-child {
+    margin: 0;
+  }
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kam school</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="icon" href="<%=require('./images/logo.svg').default %>">
+</head>
+
+<body style="margin: 0; position: relative;">
+  <div class="spiner-container">
+    <img class="spiner-img" src="<%=require('./images/loading1.gif').default %>" alt="">
+  </div>
+  <style>
+    .spiner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      margin: 0;
+      background-color: #000;
+      width: 100%;
+      height: 100vh;
+      z-index: 15;
+    }
+
+    .spiner-img {
+      width: 25vw;
+    }
+
+    @media (max-width : 767px) {
+      .spiner-img {
+        width: 60%;
+      }
+    }
+  </style>
+  <div class="page" id="page">
+    <div class="header">
+      <a href="#page" class="header__container">
+        <img src="<%=require('./images/logo.svg').default %>" alt="logo" class="header__logo">
+        <p class="header__text">привет!</p>
+      </a>
+      <nav class="header__nav">
+        <i class="header__decor">&#8226;</i>
+        <a href="#about-me" class="header__anchor">обо мне</a>
+        <i class="header__decor">&#8226;</i>
+        <a href="#team" class="header__anchor">команда</a>
+        <i class="header__decor">&#8226;</i>
+        <a href="#skills" class="header__anchor">ты получишь</a>
+        <i class="header__decor">&#8226;</i>
+        <a href="#program" class="header__anchor">программа</a>
+        <i class="header__decor">&#8226;</i>
+        <button onclick="window.location.href = '#form'" class="button header__button">Записаться</button>
+      </nav>
+      <a href="https://www.instagram.com/kamil.prog" class="header__link" target="_blank">
+        <p class="header__link-text">&#64;kamil.prog</p>
+        <img src="<%=require('./images/instagram.svg').default %>" alt="instagram" class="header__link-image">
+      </a>
+      <button class="header__menu"></button>
+    </div>
+    <div class="navMobil">
+      <nav class="navMobil__nav">
+        <a href="#about-me" class="navMobil__anchor">обо мне</a>
+        <a href="#team" class="navMobil__anchor">команда</a>
+        <a href="#skills" class="navMobil__anchor">ты получишь</a>
+        <a href="#program" class="navMobil__anchor">программа</a>
+        <a href="#form" class="navMobil__anchor">записаться</a>
+      </nav>
+    </div>
+    <main class="content">
+      <section class="title">
+        <div class="title__container">
+          <div class="title__container-title">
+            <h2 class="title__title">&#8249;Другие &#160;<span class="ttl">уже</span> &#160;программируют<span
+                class="mnm">&#10072;</span>&#8250;</h2>
+            <button onclick="window.location.href = '#form'" class="button title__button">Начать</button>
+          </div>
+          <div class="title__container-image">
+            <img src="<%=require('./images/1_2.gif').default %>" alt="единорог" class="title__image">
+            <button onclick="window.location.href = '#form'" class="button title__button">Начать</button>
+          </div>
+        </div>
+        <!-- <div class="container-string">
+          <div class="string"></div>
+        </div> -->
+      </section>
+      <section class="about-me">
+        <i id="about-me" class="anchor"></i>
+        <div class="about-me__container-title">
+          <!-- <p class="about-me__text">
+            Привет, я Камиль. Мне 23 года.
+          </p> -->
+          <p class="about-me__text">
+            <strong class="about-me__text_title">Привет, я Камиль. Мне 23 года.</strong><br><br>Как и большинство школьников, я поступил в университет, чтобы получить
+            высшее образование. Но нужных знаний
+            не получил и решил действовать сам!<br><br>Я уехал в Москву с нулём в кармане. Мне удалось поработать в
+            крупнейших российских и международных компаниях таких как Europlan, Красное и Белое, sberTech,
+            sberBank.<br><br>Сейчас я точно знаю в какой сфере можно развиваться и зарабатывать.<br><br>Программировать
+            может любой! И я помогу тебе добиться успеха!
+          </p>
+          <img src="<%=require('./images/4.gif').default %>" alt="единорог" class="about-me__image">
+        </div>
+        <div class="about-me__image-container-avtor">
+          <img src="<%=require('./images/i50.jpg').default %>" alt="автор" class="about-me__image-main">
+          <img src="<%=require('./images/play2.png').default %>" alt="play" class="about-me__image-play">
+          <!-- <div class="about-me__image__container-play">
+            <img src="<%=require('./images/play2.png').default %>" alt="play" class="about-me__image-play">
+          </div> -->
+        </div>
+        <!-- <div class="container-string">
+          <div class="string"></div>
+        </div> -->
+      </section>
+      <section class="team">
+        <i id="team" class="anchor"></i>
+        <div class="team__container-title">
+          <h2 class="team__title">Моя команда</h2>
+          <img src="<%=require('./images/2.gif').default %>" alt="единорог" class="team__image">
+        </div>
+        <div class="team__container-list">
+          <div class="slider">
+            <div class="slider-list">
+              <div class="slider-track">
+                <div class="slide">
+                  <div class="team__item">
+                    <img src="<%=require('./images/i53.jpg').default %>" alt="разработчик" class="team__item-image">
+                    <p class="team__item-name">Искандер<br>Духовный наставник</p>
+                    <p class="team__item-text">
+                      Я помогу вам решить любые психологические проблемы и найду нужные слова. Профессионализм и полная
+                      анонимность гарантирована.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="slide">
+                  <div class="team__item">
+                    <img src="<%=require('./images/i4.png').default %>" alt="автор" class="team__item-image">
+                    <p class="team__item-name">Я<br>Здесь самый главный</p>
+                    <p class="team__item-text">
+                      Я познакомлю тебя с программированием и буду преподавать язык Java. Контролирую процесс обучения
+                      каждого
+                      студента.
+                    </p>
+                  </div>
+                </div> -->
+                <div class="slide">
+                  <div class="team__item">
+                    <img src="<%=require('./images/i54.jpg').default %>" alt="дизайнер" class="team__item-image">
+                    <p class="team__item-name">Юра<br>1С программист</p>
+                    <p class="team__item-text">
+                      Специалист по платформе 8.3 и по УТ 11.3. Работал в таких компаниях, как 1С Рарус, Европлан,
+                      Красное и
+                      Белое, ИнформАудитСервис. Победитель регионального чемпионата World Skills Russia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" value="0" class="sliderinput team__container-list-input">
+          </div>
+        </div>
+        <img src="<%=require('./images/2.gif').default %>" alt="единорог" class="team__image-two">
+        <!-- <div class="container-string">
+          <div class="string"></div>
+        </div> -->
+      </section>
+      <section class="skills">
+        <i id="skills" class="anchor"></i>
+        <div class="skills__title-container">
+          <h2 class="skills__title">Hard skills</h2>
+          <p class="skills__subtitle">
+            Hard skills - (англ. "жесткие" навыки) профессиональные навыки, которым можно научить и которые можно
+            измерить. Для обучения hard skills необходимо усвоить знания и инструкции, качество обучения можно проверить
+            с помощью экзамена. Примеры hard skills: набор текста на компьютере, вождение автомобиля, чтение,
+            математика, знание иностранного языка, использование компьютерных программ.
+          </p>
+        </div>
+        <div class="skills__technologies">
+          <h2 class="skills__languages">Языки</h2>
+          <div class="skills__container">
+            <div class="slider">
+              <div class="slider-list">
+                <div class="slider-left color-left"></div>
+                <div class="slider-right"></div>
+                <div class="slider-track">
+                  <div class="slide" name="1c">
+                    <img draggable="false" src="<%=require('./images/i1.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="java">
+                    <img draggable="false" src="<%=require('./images/i3.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="python">
+                    <img draggable="false" src="<%=require('./images/i6.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="php">
+                    <img draggable="false" src="<%=require('./images/i5.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="web">
+                    <img draggable="false" src="<%=require('./images/i7.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="js">
+                    <img draggable="false" src="<%=require('./images/i4.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="c++">
+                    <img draggable="false" src="<%=require('./images/i2.png').default %>" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" value="0" class="sliderinput skills__technologies-input">
+          </div>
+        </div>
+      </section>
+      <section class="skills-technologies">
+        <div class="skills-technologies__title-container">
+          <p class="skills-technologies__subtitle">
+            Soft skills - (англ. "мягкие" навыки) универсальные компетенции, которые гораздо труднее измерить
+            количественными показателями. Иногда их называют личными качествами, потому что они зависят от характера
+            человека и приобретаются с личным опытом. Примеры soft skills: такие социальные, интеллектуальные и волевые
+            компетенции, как коммуникабельность, умение работать в команде, креативность, пунктуальность,
+            уравновешенность.
+          </p>
+        </div>
+        <div class="skills-technologies__container">
+          <h2 class="skills-technologies__title">Технологии</h2>
+          <div class="skills-technologies__slider">
+            <div class="slider">
+              <div class="slider-list">
+                <div class="slider-left color-left"></div>
+                <div class="slider-right"></div>
+                <div class="slider-track">
+                  <div class="slide" name="commandLine">
+                    <img draggable="false" src="<%=require('./images/i12.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="terminal">
+                    <img draggable="false" src="<%=require('./images/i11.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="docker">
+                    <img draggable="false" src="<%=require('./images/i13.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="git">
+                    <img draggable="false" src="<%=require('./images/i10.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="linux">
+                    <img draggable="false" src="<%=require('./images/i16.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="grafana">
+                    <img draggable="false" src="<%=require('./images/i8.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="gitlab">
+                    <img draggable="false" src="<%=require('./images/i9.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="atlassian">
+                    <img draggable="false" src="<%=require('./images/i22.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="apacheKafka">
+                    <img draggable="false" src="<%=require('./images/i21.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="rabbitMQ">
+                    <img draggable="false" src="<%=require('./images/i20.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="jenkins">
+                    <img draggable="false" src="<%=require('./images/i19.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="sonarqube">
+                    <img draggable="false" src="<%=require('./images/i18.png').default %>" alt="image">
+                  </div>
+                  <div class="slide" name="virtualbox">
+                    <img draggable="false" src="<%=require('./images/i17.png').default %>" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" value="0" class="sliderinput skills-technologies__container-input">
+          </div>
+        </div>
+      </section>
+      <section class="soft-skills">
+        <div class="soft-skills__title-container">
+          <h2 class="soft-skills__title">Soft skills</h2>
+          <p class="soft-skills__subtitle">
+            Soft skills - (англ. "мягкие" навыки) универсальные компетенции, которые гораздо труднее измерить
+            количественными показателями. Иногда их называют личными качествами, потому что они зависят от характера
+            человека и приобретаются с личным опытом. Примеры soft skills: такие социальные, интеллектуальные и волевые
+            компетенции, как коммуникабельность, умение работать в команде, креативность, пунктуальность,
+            уравновешенность.
+          </p>
+          <img src="<%=require('./images/3.gif').default %>" alt="единорог" class="soft-skills__image">
+        </div>
+        <div class="soft-skills__skills">
+          <div class="soft-skills__container">
+            <h2 class="soft-skills__title-skills">Навыки</h2>
+            <div class="soft-skills__slider">
+              <div class="slider">
+                <div class="slider-list">
+                  <div class="slider-left color-left"></div>
+                  <div class="slider-right"></div>
+                  <div class="slider-track">
+                    <div class="slide" name="flexibilityAndCreativity">
+                      <img draggable="false" src="<%=require('./images/i24.png').default %>" alt="image">
+                    </div>
+                    <div class="slide" name="negotiationSkills">
+                      <img draggable="false" src="<%=require('./images/i25.png').default %>" alt="image">
+                    </div>
+                    <div class="slide" name="timeManagement">
+                      <img draggable="false" src="<%=require('./images/i29.png').default %>" alt="image">
+                    </div>
+                    <div class="slide" name="teamwork">
+                      <img draggable="false" src="<%=require('./images/i26.png').default %>" alt="image">
+                    </div>
+                    <div class="slide" name="emotionalIntelligence">
+                      <img draggable="false" src="<%=require('./images/i27.png').default %>" alt="image">
+                    </div>
+                    <div class="slide" name="communicationSkills">
+                      <img draggable="false" src="<%=require('./images/i28.png').default %>" alt="image">
+                    </div>
+                    <div class="slide" name="presentationSkills">
+                      <img draggable="false" src="<%=require('./images/i23.png').default %>" alt="image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slidecontainer">
+              <input type="range" value="0" class="sliderinput soft-skills__container-input">
+            </div>
+          </div>
+          <div class="soft-skills__container-second">
+            <h2 class="soft-skills__title-extension">В каждом курсе</h2>
+            <div class="soft-skills__image-container">
+              <img src="<%=require('./images/i31.png').default %>" alt="image" class="soft-skills__image-skills">
+              <img src="<%=require('./images/i32.png').default %>" alt="image" class="soft-skills__image-skills">
+              <img src="<%=require('./images/i33.png').default %>" alt="image" class="soft-skills__image-skills">
+            </div>
+          </div>
+          <img src="<%=require('./images/3.gif').default %>" alt="единорог" class="soft-skills__image-two">
+        </div>
+        <!-- <div class="container-string">
+          <div class="string"></div>
+        </div> -->
+      </section>
+      <section class="program">
+        <i id="program" class="anchor"></i>
+        <a href="#" class="program__container-one" target="_blank">
+          <img src="<%=require('./images/i38.png').default %>" alt="image" class="program__image-one">
+        </a>
+        <div class="program__container-two">
+          <div class="program__container-three">
+            <a href="#" class="program__link-image-two" target="_blank">
+              <img src="<%=require('./images/i39.png').default %>" alt="image" class="program__image-two">
+            </a>
+            <a href="#" class="program__link-image-two" target="_blank">
+              <img src="<%=require('./images/i37.png').default %>" alt="image" class="program__image-two">
+            </a>
+          </div>
+          <div class="program__container-four">
+            <img src="<%=require('./images/i30.png').default %>" alt="image" class="program__image-three">
+            <img src="<%=require('./images/i36.png').default %>" alt="image" class="program__image-three">
+            <img src="<%=require('./images/i35.png').default %>" alt="image" class="program__image-three">
+            <img src="<%=require('./images/i34.png').default %>" alt="image" class="program__image-three">
+          </div>
+        </div>
+        <!-- <div class="container-string">
+          <div class="string"></div>
+        </div> -->
+      </section>
+      <section class="form">
+        <i id="form" class="anchor"></i>
+        <div class="form__form-container-one">
+          <h2 class="form__title">Ты с нами?</h2>
+          <p class="form__subtitle-title">Программирование уже здесь. Нужен только твой шаг к звездам</p>
+          <img src="<%=require('./images/i48.png').default %>" alt="единорог" class="form__image">
+        </div>
+        <div class="form__form-container">
+          <form class="form__form">
+            <input type="text" name="name" placeholder="Имя" autocomplete="off" minlength="2" maxlength="100" required
+              class="form__input form__input-valid">
+            <input type="number" name="phone" placeholder="Твой телефон" autocomplete="off" minlength="6" maxlength="30"
+              required class="form__input">
+            <input type="email" name="email" placeholder="Email" autocomplete="off" required class="form__input">
+            <button class="button form__button" disabled>Хочу поступить!</button>
+            <span class="error"></span>
+          </form>
+          <div class="form__container-social-network">
+            <a href="https://www.instagram.com/kamil.prog" class="form__link" target="_blank">
+              <img src="<%=require('./images/instagram.svg').default %>" alt="instagram" class="form__link-image">
+              <p class="form__link-text">Instagram</p>
+            </a>
+            <a href="#" class="form__link" target="_blank">
+              <img src="<%=require('./images/whatsapp.svg').default %>" alt="WhatsApp" class="form__link-image">
+              <p class="form__link-text">WhatsApp</p>
+            </a>
+            <a href="#" class="form__link" target="_blank">
+              <img src="<%=require('./images/telegram.svg').default %>" alt="Telegram" class="form__link-image">
+              <p class="form__link-text">Telegram</p>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="container-string">
+          <div class="string"></div>
+        </div> -->
+      </section>
+    </main>
+    <div class="popup popup_skills popup__display">
+      <div class="popup__container">
+        <img class="popup__image popup_close-image" src="<%=require('./images/close.svg').default %>" alt="">
+        <div class="popup__container-one">
+          <p class="popup__text"></p>
+          <button onclick="window.location.href = '#form'" class="button popup__button">Хочу поступить</button>
+        </div>
+        <div class="popup__container-two">
+          <iframe class="popup__container-two__video" src="" frameborder="0" allowfullscreen></iframe>
+          <img class="popup__test-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="popup popup_video popup__display">
+      <div class="popup__container_video">
+        <img class="popup__image-close-video popup_close-image" src="<%=require('./images/close.svg').default %>" alt="">
+        <iframe class="popup__videoIframe" src="https://www.youtube.com/embed/euFnk6ajZoE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>

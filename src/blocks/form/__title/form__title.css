@@ -1,0 +1,14 @@
+.form__title {
+  font-weight: 400;
+  font-size: 5vw;
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width : 767px) {
+  .form__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}

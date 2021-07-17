@@ -1,0 +1,16 @@
+.skills-technologies__subtitle {
+  font-weight: 400;
+  font-size: 1.2vw;
+  color: #020919;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width : 767px) {
+  .skills-technologies__subtitle {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 10px;
+    max-width: 400px;
+  }
+}

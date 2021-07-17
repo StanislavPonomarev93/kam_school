@@ -1,0 +1,140 @@
+.popup {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000cf;
+  z-index: 10;
+}
+
+.popup__display.popup__display {
+  display: none;
+}
+
+.popup__container-two__video {
+  width: 250vw;
+  height: 20vw;
+}
+
+.popup__test-image {
+  width: 15vw;
+}
+
+.popup__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80vw;
+  background-color: #6d6d6de0;
+  padding: 5vw;
+  box-sizing: border-box;
+  border-radius: 2vw;
+}
+
+.popup__container_video {
+  position: relative;
+}
+
+.popup__videoIframe {
+  width: 53vw;
+  height: 30vw;
+}
+
+.popup__image {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: 2vw;
+}
+
+.popup__image-close-video {
+  position: absolute;
+  top: -2vw;
+  right: -2vw;
+  width: 2vw;
+}
+
+.popup__image-close-video:hover,
+.popup__image:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+
+.popup__container-one {
+  max-width: 55%;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__container-two {
+  width: 35vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__text {
+  color: #fff;
+  font-size: 1.4vw;
+}
+
+.popup__button {
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  padding: 0.4vw 0.7vw;
+}
+
+@media (max-width : 767px) {
+  .popup__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    padding: 25px;
+  }
+
+  .popup__container-one {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .popup__container-two__video {
+    width: 250px;
+    height: 140px;
+  }
+
+  .popup__container-two {
+    width: 100%;
+    height: auto;
+  }
+
+  .popup__text {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .popup__test-image {
+    width: 100px;
+  }
+
+  .popup__image {
+    display: none;
+  }
+
+  .popup__button {
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

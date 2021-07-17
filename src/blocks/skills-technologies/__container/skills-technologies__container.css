@@ -1,0 +1,22 @@
+.skills-technologies__container {
+  margin: 1vw 0 0;
+  opacity: 0;
+}
+
+.skills-technologies__container-input {
+  background-color: #020919;
+}
+
+.skills-technologies__container-input::-webkit-slider-thumb {
+  background-color: #242933;
+  border: 1px solid #fff;
+}
+
+@media (max-width : 767px) {
+  .skills-technologies__container {
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

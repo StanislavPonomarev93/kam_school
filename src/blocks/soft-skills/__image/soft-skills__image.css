@@ -1,0 +1,12 @@
+.soft-skills__image {
+  margin: 0 0 0 3vw;
+  width: 27vw;
+  height: 22vw;
+  object-fit: cover;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__image {
+    display: none;
+  }
+}

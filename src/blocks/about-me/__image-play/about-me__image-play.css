@@ -1,0 +1,13 @@
+.about-me__image-play {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: 4vw;
+  cursor: pointer;
+  animation: play .8s ease infinite;
+}
+
+@keyframes play {
+  from, to { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

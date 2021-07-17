@@ -1,0 +1,26 @@
+.title__button {
+  width: 32vw;
+  padding: 1.6vw 1vw;
+  margin: 1vw 0 0 3vw;
+  border-radius: 3vw;
+  font-size: 2.2vw;
+}
+
+.title__container-image .title__button {
+  display: none;
+}
+
+@media (max-width : 767px) {
+  .title__container-title .title__button {
+    display: none;
+  }
+
+  .title__container-image .title__button {
+    display: block;
+    margin: 25px 0 0;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 10px;
+    border-radius: 20px;
+  }
+}

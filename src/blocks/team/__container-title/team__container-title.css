@@ -1,0 +1,14 @@
+.team__container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+@media (max-width : 1023px) {
+  .team__container-title {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+}

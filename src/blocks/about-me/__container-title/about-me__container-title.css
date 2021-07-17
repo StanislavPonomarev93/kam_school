@@ -1,0 +1,17 @@
+.about-me__container-title {
+  margin: 5vw 7vw 0 0;
+  position: relative;
+  width: 47vw;
+  height: 37vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width : 767px) {
+  .about-me__container-title {
+    margin: 0;
+    max-width: 400px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.header__text {
+  text-transform: uppercase;
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+
+@media (max-width : 767px) {
+  .header__text {
+    margin: 0 10px 0;
+    font-size: 12px;
+  }
+}

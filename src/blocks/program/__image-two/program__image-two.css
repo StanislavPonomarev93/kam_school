@@ -1,0 +1,9 @@
+.program__image-two {
+  width: 22vw;
+}
+
+@media (max-width : 767px) {
+  .program__image-two {
+    width: 200px;
+  }
+}

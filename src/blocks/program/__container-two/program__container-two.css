@@ -1,0 +1,11 @@
+.program__container-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width : 767px) {
+  .program__container-two {
+    align-items: center;
+  }
+}

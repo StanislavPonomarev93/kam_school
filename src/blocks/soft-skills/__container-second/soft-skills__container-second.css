@@ -1,0 +1,20 @@
+.soft-skills__container-second {
+  background-color: #fff;
+  padding: .5vw 1vw 1vw;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  max-width: 35vw;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__container-second {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 0;
+    max-width: 400px;
+  }
+}

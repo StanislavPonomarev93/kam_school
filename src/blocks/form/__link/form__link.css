@@ -1,0 +1,21 @@
+.form__link {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 7vw;
+  align-items: center;
+}
+
+.form__link:last-child {
+  margin-right: 0;
+}
+
+.form__link:hover {
+  opacity: .6;
+}
+
+@media (max-width : 767px) {
+  .form__link {
+    margin-right: 40px;
+  }
+}

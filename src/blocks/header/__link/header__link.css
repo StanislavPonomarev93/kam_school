@@ -1,0 +1,16 @@
+.header__link {
+  position: absolute;
+  top: 0;
+  right: 6vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width : 767px) {
+  .header__link {
+    display: none;
+  }
+}

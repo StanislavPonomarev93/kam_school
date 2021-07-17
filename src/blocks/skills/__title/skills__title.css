@@ -1,0 +1,14 @@
+.skills__title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 3vw;
+  margin: 0 0 1vw;
+}
+
+@media (max-width : 767px) {
+  .skills__title {
+    font-size: 34px;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+}

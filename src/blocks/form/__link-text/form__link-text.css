@@ -1,0 +1,10 @@
+.form__link-text {
+  font-size: 1.4vw;
+  margin: 0;
+}
+
+@media (max-width : 767px) {
+  .form__link-text {
+    display: none;
+  }
+}

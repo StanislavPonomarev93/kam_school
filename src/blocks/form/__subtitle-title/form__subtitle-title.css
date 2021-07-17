@@ -1,0 +1,11 @@
+.form__subtitle-title {
+  color: #fff;
+  font-size: 1.2vw;
+  margin: 0;
+}
+
+@media (max-width : 767px) {
+  .form__subtitle-title {
+    display: none;
+  }
+}

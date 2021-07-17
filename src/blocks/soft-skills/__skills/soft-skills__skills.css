@@ -1,0 +1,14 @@
+.soft-skills__skills {
+  display: flex;
+  flex-direction: column;
+  max-width: 48vw;
+}
+
+@media (max-width : 767px) {
+  .soft-skills__skills {
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    padding-bottom: 0;
+  }
+}

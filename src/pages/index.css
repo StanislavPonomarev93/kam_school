@@ -1,0 +1,98 @@
+@import url('../pages/normalize.css');
+@import url('../fonts/fonts.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/title/title.css');
+@import url('../blocks/about-me/about-me.css');
+@import url('../blocks/team/team.css');
+@import url('../blocks/skills/skills.css');
+@import url('../blocks/slider/slider.css');
+@import url('../blocks/skills-technologies/skills-technologies.css');
+@import url('../blocks/soft-skills/soft-skills.css');
+@import url('../blocks/program/program.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/navMobil/navMobil.css');
+@import url('../blocks/anchor/anchor.css');
+@import url('../blocks/button/button.css');
+@import url('../blocks/popup/popup.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #020919;
+  position: relative;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .container-string {
+  display: flex;
+  align-items: center;
+  height: 1vw;
+  position: absolute;
+  bottom: 2vw;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  left: 50%;
+  width: 0%;
+  background-color: #020919;
+  -webkit-transition: width 1s ease-in-out;
+  -moz--transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.string {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+} */
+
+.mnm {
+  animation: blink .6s step-end infinite;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: #fff;
+  }
+}
+
+.ttl {
+  margin-right: 16vw;
+}
+
+@media (max-width : 767px) {
+  .ttl {
+    margin: 0;
+  }
+}

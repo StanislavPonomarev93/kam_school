@@ -1,0 +1,12 @@
+.program__container-three {
+  display: flex;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .program__container-three {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.about-me__image-container-avtor {
+  position: relative;
+  transition: all .3s ease-out;
+  opacity: 0;
+}
+
+.about-me__image-container-avtor:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width : 767px) {
+  .about-me__image-container-avtor {
+    max-width: 280px;
+    margin-top: 20px;
+    padding-bottom: 2vw;
+  }
+}

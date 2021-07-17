@@ -1,0 +1,30 @@
+@import url('./__title/title__title.css');
+@import url('./__container/title__container.css');
+@import url('./__border/title__border.css');
+@import url('./__image/title__image.css');
+@import url('./__button/title__button.css');
+@import url('./__container-image/title__container-image.css');
+
+.title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  padding: 3.5vw 6vw 2vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width : 1023px) {
+  .title {
+    padding: 6vw 6vw 2vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .title {
+    padding: 50px 30px 15px;
+    justify-content: center;
+  }
+}

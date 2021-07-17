@@ -1,0 +1,12 @@
+.program__link-image-two {
+  margin-right: 2vw;
+}
+.program__link-image-two:last-child {
+  margin-right: 0;
+}
+
+@media (max-width : 767px) {
+  .program__link-image-two {
+    margin: 0 0 20px;
+  }
+}

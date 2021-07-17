@@ -1,0 +1,30 @@
+@import url('./__title-container/skills-technologies__title-container.css');
+@import url('./__slider/skills-technologies__slider.css');
+@import url('./__title/skills-technologies__title.css');
+@import url('./__subtitle/skills-technologies__subtitle.css');
+@import url('./__container/skills-technologies__container.css');
+
+.skills-technologies {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  height: 50vh;
+}
+
+@media (max-width : 1023px) {
+  .skills-technologies {
+    padding: 0 6vw 1vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .skills-technologies {
+    padding: 30px 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

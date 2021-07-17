@@ -1,0 +1,14 @@
+.team__item-text {
+  font-size: 1vw;
+  line-height: 1.4em;
+  color: #fff;
+  margin-top: 2vw;
+  text-align: center;
+}
+
+@media (max-width : 1023px) {
+  .team__item-text {
+    font-size: 10px;
+    text-align: center;
+  }
+}

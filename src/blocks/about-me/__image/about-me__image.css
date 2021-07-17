@@ -1,0 +1,33 @@
+.about-me__image {
+  width: 10vw;
+  animation: image 10s steps(12) infinite;
+  opacity: 0;
+}
+
+@keyframes image {
+  from,
+  to {
+    margin: 0;
+  }
+
+  50% {
+    transform: scale(1);
+    margin-left: 30vw;
+  }
+
+  55% {
+    transform: scaleX(-1);
+    margin-left: 27vw;
+  }
+
+  95% {
+    transform: scaleX(-1);
+    margin-left: 3vw;
+  }
+}
+
+@media (max-width : 767px) {
+  .about-me__image {
+    display: none;
+  }
+}

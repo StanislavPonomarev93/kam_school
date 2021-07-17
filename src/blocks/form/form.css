@@ -1,0 +1,50 @@
+@import url('./__title/form__title.css');
+@import url('./__form-container/form__form-container.css');
+@import url('./__image/form__image.css');
+@import url('./__subtitle-title/form__subtitle-title.css');
+@import url('./__form/form__form.css');
+@import url('./__container-social-network/form__container-social-network.css');
+@import url('./__link/form__link.css');
+@import url('./__input/form__input.css');
+@import url('./__button/form__button.css');
+@import url('./__link-image/form__link-image.css');
+@import url('./__link-text/form__link-text.css');
+@import url('./__form-container-one/form__form-container-one.css');
+
+
+.form {
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  position: relative;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.error {
+  color: red;
+  height: 2vw;
+  text-align: center;
+  font-size: 1vw;
+}
+
+@media (max-width : 1023px) {
+  .form {
+    padding: 3.5vw 6vw 4vw;
+    height: auto;
+  }
+}
+
+@media (max-width : 767px) {
+  .form {
+    padding: 50px 30px 30px;
+    display: block;
+  }
+
+  .error {
+    height: 20px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+.skills__languages {
+  font-weight: 400;
+  font-size: 3vw;
+  color: #fff;
+  margin: 0 0 0 1vw;
+}
+
+@media (max-width : 767px) {
+  .skills__languages {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.form__link-image {
+  width: 2.5vw;
+  margin-right: .4vw;
+}
+
+@media (max-width : 767px) {
+  .form__link-image {
+    width: 30px;
+    margin-right: 5px;
+  }
+}

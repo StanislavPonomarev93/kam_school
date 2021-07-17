@@ -1,0 +1,31 @@
+@import url('./__container-title/about-me__container-title.css');
+@import url('./__image-main/about-me__image-main.css');
+@import url('./__image-container-avtor/about-me__image-container-avtor.css');
+@import url('./__text/about-me__text.css');
+@import url('./__image/about-me__image.css');
+@import url('./__image__container-play/about-me__image__container-play.css');
+@import url('./__image-play/about-me__image-play.css');
+
+.about-me {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+@media (max-width : 1023px) {
+  .about-me {
+    height: auto;
+    padding: 6vw 6vw 2vw;
+  }
+}
+
+@media (max-width : 767px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px 20px;
+  }
+}

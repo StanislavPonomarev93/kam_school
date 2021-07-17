@@ -1,0 +1,10 @@
+.form__container-social-network {
+  display: flex;
+  margin-top: 1vw;
+}
+
+@media (max-width : 767px) {
+  .form__container-social-network {
+    margin-top: 10px;
+  }
+}

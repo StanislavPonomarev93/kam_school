@@ -1,0 +1,15 @@
+.skills-technologies__title-container {
+  margin: 5vw 6vw 0 0;
+  max-width: 35vw;
+  opacity: 0;
+}
+
+@media (max-width : 767px) {
+  .skills-technologies__title-container {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+}
